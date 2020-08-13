@@ -1,0 +1,387 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TemperatureSensorKicad-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 7874 5906
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328-P IC?
+U 1 1 58C829ED
+P 2650 2400
+F 0 "IC?" H 1900 3650 50  0000 L BNN
+F 1 "ATMEGA328-P" H 3050 1000 50  0000 L BNN
+F 2 "DIL28" H 2650 2400 50  0000 C CIN
+F 3 "" H 2650 2400 50  0000 C CNN
+	1    2650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCD-016N002L DS?
+U 1 1 58C82A33
+P 6800 3200
+F 0 "DS?" H 6000 3600 50  0000 C CNN
+F 1 "LCD-016N002L" H 7500 3600 50  0000 C CNN
+F 2 "WC1602A" H 6800 3150 50  0000 C CIN
+F 3 "" H 6800 3200 50  0000 C CNN
+	1    6800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 2900 3800 2900
+Wire Wire Line
+	3650 3000 3800 3000
+Wire Wire Line
+	3650 3100 3800 3100
+Wire Wire Line
+	6300 2750 6150 2750
+Wire Wire Line
+	6300 2850 6150 2850
+Wire Wire Line
+	6300 2950 6150 2950
+Wire Wire Line
+	3650 2650 3800 2650
+Wire Wire Line
+	3650 2550 3800 2550
+Wire Wire Line
+	3650 2450 3800 2450
+Wire Wire Line
+	3650 2350 3800 2350
+Text GLabel 3800 2900 2    31   Input ~ 0
+RS
+Text GLabel 3800 3000 2    31   Input ~ 0
+RW
+Text GLabel 3800 3100 2    31   Input ~ 0
+E
+Text GLabel 6150 2750 0    31   Input ~ 0
+RS
+Text GLabel 6150 2850 0    31   Input ~ 0
+RW
+Text GLabel 6150 2950 0    31   Input ~ 0
+E
+Text GLabel 3800 2650 2    31   Input ~ 0
+D0
+Text GLabel 3800 2550 2    31   Input ~ 0
+D1
+Text GLabel 3800 2450 2    31   Input ~ 0
+D2
+Text GLabel 3800 2350 2    31   Input ~ 0
+D3
+Wire Wire Line
+	6300 3450 6200 3450
+Wire Wire Line
+	6300 3550 6200 3550
+Wire Wire Line
+	6300 3650 6200 3650
+Wire Wire Line
+	6300 3750 6200 3750
+Text GLabel 6200 3450 0    31   Input ~ 0
+D0
+Text GLabel 6200 3550 0    31   Input ~ 0
+D1
+Text GLabel 6200 3650 0    31   Input ~ 0
+D2
+Text GLabel 6200 3750 0    31   Input ~ 0
+D3
+$Comp
+L +5V #PWR?
+U 1 1 58C82C17
+P 6150 2100
+F 0 "#PWR?" H 6150 1950 50  0001 C CNN
+F 1 "+5V" H 6150 2240 50  0000 C CNN
+F 2 "" H 6150 2100 50  0000 C CNN
+F 3 "" H 6150 2100 50  0000 C CNN
+	1    6150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 58C82C31
+P 1600 1000
+F 0 "#PWR?" H 1600 850 50  0001 C CNN
+F 1 "+5V" H 1600 1140 50  0000 C CNN
+F 2 "" H 1600 1000 50  0000 C CNN
+F 3 "" H 1600 1000 50  0000 C CNN
+	1    1600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2450 6150 2450
+Wire Wire Line
+	6150 2450 6150 2100
+Wire Wire Line
+	1750 1300 1600 1300
+Wire Wire Line
+	1600 1300 1600 1000
+$Comp
+L GND #PWR?
+U 1 1 58C82C91
+P 1400 3700
+F 0 "#PWR?" H 1400 3450 50  0001 C CNN
+F 1 "GND" H 1400 3550 50  0000 C CNN
+F 2 "" H 1400 3700 50  0000 C CNN
+F 3 "" H 1400 3700 50  0000 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58C82CA9
+P 1650 3700
+F 0 "#PWR?" H 1650 3450 50  0001 C CNN
+F 1 "GND" H 1650 3550 50  0000 C CNN
+F 2 "" H 1650 3700 50  0000 C CNN
+F 3 "" H 1650 3700 50  0000 C CNN
+	1    1650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58C82CBA
+P 5300 3100
+F 0 "#PWR?" H 5300 2850 50  0001 C CNN
+F 1 "GND" H 5300 2950 50  0000 C CNN
+F 2 "" H 5300 3100 50  0000 C CNN
+F 3 "" H 5300 3100 50  0000 C CNN
+	1    5300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3500 1400 3500
+Wire Wire Line
+	1400 3500 1400 3700
+Wire Wire Line
+	1750 3600 1650 3600
+Wire Wire Line
+	1650 3600 1650 3700
+$Comp
+L R_Variable 8K
+U 1 1 58C82CFB
+P 5650 2950
+F 0 "8K" V 5750 2850 50  0000 L CNN
+F 1 "R_Variable" V 5550 2900 50  0000 L CNN
+F 2 "" V 5580 2950 50  0000 C CNN
+F 3 "" H 5650 2950 50  0000 C CNN
+	1    5650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2650 5650 2650
+Wire Wire Line
+	5650 2650 5650 2800
+$Comp
+L GND #PWR?
+U 1 1 58C82D55
+P 5650 3100
+F 0 "#PWR?" H 5650 2850 50  0001 C CNN
+F 1 "GND" H 5650 2950 50  0000 C CNN
+F 2 "" H 5650 3100 50  0000 C CNN
+F 3 "" H 5650 3100 50  0000 C CNN
+	1    5650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L L 100uH
+U 1 1 58C82DA2
+P 950 1300
+F 0 "100uH" V 900 1300 50  0000 C CNN
+F 1 "L" V 1025 1300 50  0000 C CNN
+F 2 "" H 950 1300 50  0000 C CNN
+F 3 "" H 950 1300 50  0000 C CNN
+	1    950  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C 100uF
+U 1 1 58C82DE5
+P 950 1850
+F 0 "100uF" H 975 1950 50  0000 L CNN
+F 1 "C" H 975 1750 50  0000 L CNN
+F 2 "" H 988 1700 50  0000 C CNN
+F 3 "" H 950 1850 50  0000 C CNN
+	1    950  1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  1150 950  1000
+Wire Wire Line
+	950  1450 950  1700
+Wire Wire Line
+	1750 1600 950  1600
+Connection ~ 950  1600
+Wire Wire Line
+	950  2000 950  2150
+$Comp
+L +5V #PWR?
+U 1 1 58C82E9F
+P 950 1000
+F 0 "#PWR?" H 950 850 50  0001 C CNN
+F 1 "+5V" H 950 1140 50  0000 C CNN
+F 2 "" H 950 1000 50  0000 C CNN
+F 3 "" H 950 1000 50  0000 C CNN
+	1    950  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58C82EC0
+P 950 2150
+F 0 "#PWR?" H 950 1900 50  0001 C CNN
+F 1 "GND" H 950 2000 50  0000 C CNN
+F 2 "" H 950 2150 50  0000 C CNN
+F 3 "" H 950 2150 50  0000 C CNN
+	1    950  2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PNP_BEC 2N3906
+U 1 1 58C83097
+P 4850 2050
+F 0 "2N3906" H 5050 2100 50  0000 L CNN
+F 1 "Q_PNP_BEC" H 5050 2000 50  0000 L CNN
+F 2 "" H 5050 2150 50  0000 C CNN
+F 3 "" H 4850 2050 50  0000 C CNN
+	1    4850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 51K
+U 1 1 58C830D8
+P 4950 1600
+F 0 "51K" V 5030 1600 50  0000 C CNN
+F 1 "R" V 4950 1600 50  0000 C CNN
+F 2 "" V 4880 1600 50  0000 C CNN
+F 3 "" H 4950 1600 50  0000 C CNN
+	1    4950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58C83110
+P 4650 2600
+F 0 "R?" V 4730 2600 50  0000 C CNN
+F 1 "R" V 4650 2600 50  0000 C CNN
+F 2 "" V 4580 2600 50  0000 C CNN
+F 3 "" H 4650 2600 50  0000 C CNN
+	1    4650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener 1N4734ATR
+U 1 1 58C831B5
+P 4650 1600
+F 0 "1N4734ATR" H 4650 1700 50  0000 C CNN
+F 1 "D_Zener" H 4650 1500 50  0000 C CNN
+F 2 "" H 4650 1600 50  0000 C CNN
+F 3 "" H 4650 1600 50  0000 C CNN
+	1    4650 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L D 1N4007
+U 1 1 58C83251
+P 4950 2600
+F 0 "1N4007" H 4950 2700 50  0000 C CNN
+F 1 "D" H 4950 2500 50  0000 C CNN
+F 2 "" H 4950 2600 50  0000 C CNN
+F 3 "" H 4950 2600 50  0000 C CNN
+	1    4950 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 1750 4650 2450
+Connection ~ 4650 2050
+Wire Wire Line
+	4950 1750 4950 1850
+Wire Wire Line
+	4950 2250 4950 2450
+Wire Wire Line
+	4950 1450 4950 1100
+Wire Wire Line
+	4650 1450 4650 1300
+Wire Wire Line
+	4650 1300 4950 1300
+Connection ~ 4950 1300
+$Comp
+L +12V #PWR?
+U 1 1 58C83476
+P 4950 1100
+F 0 "#PWR?" H 4950 950 50  0001 C CNN
+F 1 "+12V" H 4950 1240 50  0000 C CNN
+F 2 "" H 4950 1100 50  0000 C CNN
+F 3 "" H 4950 1100 50  0000 C CNN
+	1    4950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58C834A8
+P 4950 2950
+F 0 "#PWR?" H 4950 2700 50  0001 C CNN
+F 1 "GND" H 4950 2800 50  0000 C CNN
+F 2 "" H 4950 2950 50  0000 C CNN
+F 3 "" H 4950 2950 50  0000 C CNN
+	1    4950 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2750 4950 2950
+Wire Wire Line
+	4650 2750 4650 2850
+Wire Wire Line
+	4650 2850 4950 2850
+Connection ~ 4950 2850
+Wire Wire Line
+	4950 2350 5200 2350
+Connection ~ 4950 2350
+Text GLabel 5200 2350 2    31   Input ~ 0
+reading
+Wire Wire Line
+	3650 2250 3800 2250
+Text GLabel 3800 2250 2    31   Input ~ 0
+reading
+Wire Wire Line
+	6300 2550 5300 2550
+Wire Wire Line
+	5300 2550 5300 3100
+Text Notes 3550 5150 0    60   Italic 12
+Diode Thermometer Prototype
+$EndSCHEMATC
